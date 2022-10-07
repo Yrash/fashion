@@ -1,0 +1,32 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  opacity: 20%;
+  padding: 25px;
+
+  &__logo {
+  }
+  &__right {
+    display: flex;
+    gap: 34px;
+  }
+}
+.Social {
+  display: flex;
+  gap: 18px;
+ 
+
+  & img {
+  }
+}
+.Search {
+  & button {
+    background: transparent;
+    border: none;
+   
+
+    & img {
+    }
+  }
+}

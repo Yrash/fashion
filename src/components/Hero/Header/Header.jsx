@@ -47,7 +47,7 @@ const Header = () => {
       <div className="Header__logo">
         <img src={logo} />
       </div>
-      <div className="right">
+      <div className="Header__right">
         <Navigation />
         <Social />
         <Search />
