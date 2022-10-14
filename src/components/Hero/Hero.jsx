@@ -11,7 +11,6 @@ const Hero = () => {
 
   useEffect(() => {
     Api.post.loadPosts().then((response) => {
-      console.log(response);
       if (response?.data?.posts) {
         setPosts(response.data.posts);
       }
@@ -30,7 +29,7 @@ const Hero = () => {
       >
         {(posts || []).map((post) => {
           return (
-            <div className="SlidePost">
+            <div key={post.post_id} className="SlidePost">
               <div className="SlidePost__title">{post.title}</div>
               <div className="SlidePost__subtitle">{post.subtitle}</div>
               <img src={post.picture} alt="" />
